@@ -1,11 +1,15 @@
 # Introduction
-N/A
+
+TBD
 
 # Usage
-N/A
+
+TBD
 
 # Requirements & Dependencies
-N/A
+
+- React 18+
+- TypeScript 4.9.5+
+- Tailwind CSS
 
 # Previews
-![preview image](https://via.placeholder.com/350x240)
