@@ -9,11 +9,13 @@ type Props = {
 };
 
 const HomeView : FC<Props> = ({ data }) => {
+  const { recsData: recs } = data;
+
   return (
     <>
       <SearchContainer />
 
-      <Recommendations />
+      <Recommendations data={recs} />
 
       <div>
         <Card

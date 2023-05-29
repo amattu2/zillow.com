@@ -16,14 +16,26 @@ export type ApiData = {
   recsData: HomeRecommendation[];
 };
 
-type HomeRecommendation = {
+export type HomeRecommendation = {
   bathroomCount: number;
   bedroomCount: number;
   countryCode: string;
   currencyCode: string;
   formattedAddress: FormattedAddress;
   price: Price;
+  livingAreaSquareFeet: number;
+  primaryPhoto: PrimaryPhoto;
+  currencyType: string;
+  homeStatus: {
+    isNewConstruction: boolean;
+  }
   zpid: number;
+};
+
+type PrimaryPhoto = {
+  p_e: {
+    url: string;
+  };
 };
 
 type FormattedAddress = {
