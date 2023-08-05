@@ -52,7 +52,7 @@ type Price = {
 
 const defaultState: ApiProviderState = { status: ApiProviderStatus.LOADING, data: null };
 
-const Context = React.createContext<ApiProviderState>(defaultState);
+const Context = React.createContext<ApiProviderState | null>(null);
 
 export const useApi = (): ApiProviderState => {
   const contextState = React.useContext(Context);
