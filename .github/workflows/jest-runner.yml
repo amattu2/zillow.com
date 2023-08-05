@@ -23,8 +23,8 @@ jobs:
         run: npm ci
 
       # Run Jest tests
-      - name: "Run Jest Tests"
-        run: npm test
+      - name: "Run Jest"
+        run: npm test:ci
 
       # Run ESLint
       - name: "Run ESLint"
